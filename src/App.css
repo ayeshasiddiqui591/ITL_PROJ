@@ -1,0 +1,232 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color:white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer {
+  background-color: black;
+  color: #FAF1CF;
+  padding: 20px 0;
+  height: 40vh;
+  width:100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-info, .social-media {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media ul li {
+  margin-bottom: 10px;
+}
+
+.social-media ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-media ul li a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.vendor-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.main-text {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: text 3s infinite;
+}
+/*
+@keyframes text {
+  0%{
+    top:10%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+  100%{
+    top:60%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+}*/
+
+
+.started1 {
+  top:20%;
+  left:80%;
+  background-color:#bca87e;
+  color: #fff;
+  border: none;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: center;
+}
+
+.started1:hover {
+  background-color: #ba8f32;
+}
+
+.sub-text {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align:center;
+  color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 100px;
+
+
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.text-container {
+  flex: 1;
+  padding: 0 50px;
+}
+
+.aboutmain-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.text-card {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+}
+
+.gallery-item {
+  margin: 20px;
+}
+
+.gallery-item img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex; /* Use flexbox for horizontal layout */
+  width: 1200px; /* Adjust width as needed */
+  height: max-content;
+}
+
+.map {
+  flex: 4; /* Take up 3/4 of the space */
+  height: 700px; /* Set height for the map */
+}
+
+.Sidebar {
+  flex: 1;
+  margin-left: 10px;
+  width: 250px; /* Set width for the sidebar (1/4 of the space) */
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+}
+
